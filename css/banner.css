@@ -1,7 +1,7 @@
  /* Banner flotante en la esquina */
         .banner-mini {
             position: fixed;
-            top: 20px;
+            top: 70px;
             right: 20px;
             /* Cambia a left: 20px si quieres la izquierda */
             background-color: #ffcc00;
