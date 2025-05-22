@@ -30,6 +30,17 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/banner.css" rel="stylesheet">
+    <script>
+        function cerrarBanner() {
+            const banner = document.getElementById("banner");
+            banner.style.display = "none";
+
+            // Mostrarlo de nuevo después de 20 segundos
+            setTimeout(() => {
+                banner.style.display = "flex";
+            }, 10000);
+        }
+    </script>
 </head>
 
 <body>
@@ -167,7 +178,7 @@
     <!-- Carousel End -->
     
 <div class="banner-mini" id ="banner">
-    <button onclick="document.getElementById('banner').style.display='none';">&times;</button>
+    <button onclick=cerrarBanner()>&times;</button>
     <img src="img/tiresale_1_30.jpg" alt="Image" />
 
 </div>
@@ -392,7 +403,7 @@
                                 <img class="img-fluid" src="img/icono.png" alt="Image">
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4" style="color: white;"> Tires Service </h5> <br>
-                            <img src="img/serv11.jpg" alt="">
+                            <img src="img/tiresale_1_30.jpg" alt="">
                         </div>
 
 

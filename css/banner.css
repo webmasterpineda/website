@@ -1,16 +1,32 @@
 .banner-mini {
-      position: fixed;
-      top: 150px;
-      right: 300px;
-      background-color: #ffcc00;
-      padding: 10px 15px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+  /* Estilos existentes */
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  background-color: #ffcc00;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+
+  /* 🔁 Efecto llamativo: rebote */
+  animation: rebotar 1.5s ease-in-out infinite;
+}
+
+/* 🎯 Animación del banner (rebote leve) */
+@keyframes rebotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
     /* 🖼️ Imagen tamaño normal (modo escritorio) */
     .banner-mini  {
@@ -28,6 +44,15 @@
       cursor: pointer;
       font-weight: bold;
     }
+      @keyframes flotar {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
 
     /* 📱 En pantallas pequeñas (modo móvil) */
     @media (max-width: 768px) {
@@ -47,4 +72,7 @@
       .banner-mini img {
         width: 100px;
       }
+      
     }
+    
+    
